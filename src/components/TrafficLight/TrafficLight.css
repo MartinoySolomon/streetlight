@@ -1,5 +1,6 @@
 .trafficLightBox {
 	background-color: #000000;
+    padding: 2rem;
 	width: 200px;
 	height: 600px;
 	display: flex;
@@ -7,28 +8,34 @@
 	justify-content: space-around;
 	border-radius: 20px;
 	.trafficLight {
-		width: 150px;
-		height: 150px;
+		width: 130px;
+		height: 130px;
 		background-color: #ffffff;
 		border-radius: 50%;
 	}
 	.red {
-		background-color: rgb(139, 102, 102);
+		background-color: red;
+		opacity: 0.2;
 	}
 	.red.active {
-		background-color: red;
+		opacity: 1;
 	}
 	.yellow {
-		background-color: rgb(134, 134, 94);
+		background-color: yellow;
+		opacity: 0.2;
 	}
 	.yellow.active {
-		background-color: yellow;
+		opacity: 1;
 	}
 	.green {
-		background-color: rgb(50, 74, 50);
+		opacity: 0.2;
+		background-color: green;
 	}
 	.active.green {
-		background-color: green;
+		opacity: 1;
+	}
+	.active {
+		box-shadow: 0 0 40px #ffffff;
 	}
 }
 .trafficLightBoxPole {
